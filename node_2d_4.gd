@@ -1,4 +1,5 @@
 extends Node2D
-func _input(event):
-	if event.is_action_pressed("ui_cancel"):
-		get_tree().change_scene_to_file("res://scenes/title.tscn")
+
+func _on_body_entered(body: Node2D):
+	if body.is_in_group("SPRITE") or body.name == "SPRITE":
+		get_tree().change_scene_to_file("res://Part2.tscn")
