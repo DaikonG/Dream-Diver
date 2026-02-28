@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dghhj0nonadys"]
+[gd_scene format=3 uid="uid://dxoadh6yoq3px"]
 
 [ext_resource type="Texture2D" uid="uid://duoya86hjavpj" path="res://Untitled design (8).png" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://d3y6317vmhuco" path="res://Dream Diver (4).png" id="2_0e48y"]
@@ -44,3 +44,7 @@ texture = ExtResource("5_q6r6c")
 
 [connection signal="button_down" from="Sprite2D3/Button" to="Sprite2D3/Button" method="_on_button_down"]
 [connection signal="pressed" from="Sprite2D3/Button" to="Sprite2D3/Button" method="_on_pressed"]
+[ext_resource type="Script" uid="uid://b8aqypljqn0tc" path="res://node_2d.gd" id="1_wtcfe"]
+
+[node name="Node2D" type="Node2D" unique_id=385337305]
+script = ExtResource("1_wtcfe")
