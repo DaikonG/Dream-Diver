@@ -3,34 +3,50 @@
 [ext_resource type="Texture2D" uid="uid://duoya86hjavpj" path="res://Untitled design (8).png" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://d3y6317vmhuco" path="res://Dream Diver (4).png" id="2_0e48y"]
 [ext_resource type="Texture2D" uid="uid://cxvcfl3dh4iqy" path="res://PLAY.png" id="3_epypp"]
-[ext_resource type="Script" uid="uid://b5a7fhj06dh0r" path="res://button.gd" id="4_0hol4"]
+[ext_resource type="Script" uid="uid://brcvcnt3tuc47" path="res://scenes/button.gd" id="4_b3w7a"]
+[ext_resource type="Texture2D" uid="uid://dyu3lbnhrm6ov" path="res://pixil-frame-0 2.png" id="5_b3w7a"]
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_0hol4"]
+[sub_resource type="GDScript" id="GDScript_b3w7a"]
 
 [node name="Node2D" type="Node2D" unique_id=1209610409]
+script = SubResource("GDScript_b3w7a")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1855503630]
-position = Vector2(66, 66)
+position = Vector2(722, 300)
+scale = Vector2(2, 2)
 texture = ExtResource("1_0e48y")
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=142752272]
-position = Vector2(273, 75)
+position = Vector2(1336, 321.99997)
+scale = Vector2(3.12, 3)
 texture = ExtResource("2_0e48y")
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2098652828]
+z_index = -1
+offset_left = -2.0
+offset_right = 1929.0
+offset_bottom = 1082.0
+texture = ExtResource("5_b3w7a")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
 [node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1951051329]
-position = Vector2(292, 263)
+z_index = 1
+position = Vector2(1396, 810)
+scale = Vector2(2.954, 3)
 texture = ExtResource("3_epypp")
 
-[node name="Button" type="Button" parent="Sprite2D3" unique_id=1568245629]
-offset_left = -58.0
-offset_top = -18.0
-offset_right = 58.0
-offset_bottom = 20.0
+[node name="Button" type="Button" parent="Sprite2D3" unique_id=749241924]
+offset_left = -57.549072
+offset_top = -18.333328
+offset_right = 57.549072
+offset_bottom = 19.666672
 action_mode = 0
-button_group = SubResource("ButtonGroup_0hol4")
 flat = true
-autowrap_mode = 1
-script = ExtResource("4_0hol4")
+script = ExtResource("4_b3w7a")
 
+[connection signal="button_down" from="Sprite2D3/Button" to="." method="_on_button_button_down"]
 [connection signal="button_down" from="Sprite2D3/Button" to="Sprite2D3/Button" method="_on_button_down"]
+[connection signal="pressed" from="Sprite2D3/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Sprite2D3/Button" to="Sprite2D3/Button" method="_on_pressed"]
