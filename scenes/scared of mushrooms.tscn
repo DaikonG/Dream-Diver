@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b3pry0s7vrwcc"]
+
+[ext_resource type="Texture2D" uid="uid://ocr7bj4gywkl" path="res://Sprites/Backgrounds/Double/background_color_mushrooms.png" id="1_b6emv"]
+
+[node name="Node2D" type="Node2D" unique_id=1970147026]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=603514473]
+offset_right = 1918.0
+offset_bottom = 1085.0
+texture = ExtResource("1_b6emv")
