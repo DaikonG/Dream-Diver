@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dghhj0nonadys"]
+
+[ext_resource type="Texture2D" uid="uid://duoya86hjavpj" path="res://Untitled design (8).png" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://d3y6317vmhuco" path="res://Dream Diver (4).png" id="2_0e48y"]
+
+[node name="Node2D" type="Node2D" unique_id=1209610409]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1855503630]
+position = Vector2(66, 66)
+texture = ExtResource("1_0e48y")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=142752272]
+position = Vector2(273, 75)
+texture = ExtResource("2_0e48y")
