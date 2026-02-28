@@ -10,7 +10,7 @@
 
 [node name="Node2D" type="Node2D" unique_id=1209610409]
 position = Vector2(0, 1)
-scale = Vector2(2.9599996, 3.04)
+scale = Vector2(1.0017359, 1.002121)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1855503630]
 position = Vector2(579, 175)
